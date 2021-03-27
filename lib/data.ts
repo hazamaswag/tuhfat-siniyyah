@@ -43,77 +43,77 @@ export const chapters = [
   },
   {
     title: "3. triple triple triple chicken dinner",
-    slug: "third",
+    slug: "thirds",
     date: new Date().toString(),
     content:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non nemo earum officia minima assumenda aspernatur eum amet nulla eligendi possimus.",
   },
   {
     title: "3. triple triple triple chicken dinner",
-    slug: "third",
+    slug: "thirdss",
     date: new Date().toString(),
     content:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non nemo earum officia minima assumenda aspernatur eum amet nulla eligendi possimus.",
   },
   {
     title: "3. triple triple triple chicken dinner",
-    slug: "third",
+    slug: "thirdd",
     date: new Date().toString(),
     content:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non nemo earum officia minima assumenda aspernatur eum amet nulla eligendi possimus.",
   },
   {
     title: "3. triple triple triple chicken dinner",
-    slug: "third",
+    slug: "thirddd",
     date: new Date().toString(),
     content:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non nemo earum officia minima assumenda aspernatur eum amet nulla eligendi possimus.",
   },
   {
     title: "3. triple triple triple chicken dinner",
-    slug: "third",
+    slug: "thirdf",
     date: new Date().toString(),
     content:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non nemo earum officia minima assumenda aspernatur eum amet nulla eligendi possimus.",
   },
   {
     title: "3. triple triple triple chicken dinner",
-    slug: "third",
+    slug: "thirdff",
     date: new Date().toString(),
     content:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non nemo earum officia minima assumenda aspernatur eum amet nulla eligendi possimus.",
   },
   {
     title: "3. triple triple triple chicken dinner",
-    slug: "third",
+    slug: "thirda",
     date: new Date().toString(),
     content:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non nemo earum officia minima assumenda aspernatur eum amet nulla eligendi possimus.",
   },
   {
     title: "3. triple triple triple chicken dinner",
-    slug: "third",
+    slug: "thirdaa",
     date: new Date().toString(),
     content:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non nemo earum officia minima assumenda aspernatur eum amet nulla eligendi possimus.",
   },
   {
     title: "3. triple triple triple chicken dinner",
-    slug: "third",
+    slug: "thirs",
     date: new Date().toString(),
     content:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non nemo earum officia minima assumenda aspernatur eum amet nulla eligendi possimus.",
   },
   {
     title: "3. triple triple triple chicken dinner",
-    slug: "third",
+    slug: "thirss",
     date: new Date().toString(),
     content:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non nemo earum officia minima assumenda aspernatur eum amet nulla eligendi possimus.",
   },
   {
     title: "3. triple triple triple chicken dinner",
-    slug: "third",
+    slug: "thirdddd",
     date: new Date().toString(),
     content:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non nemo earum officia minima assumenda aspernatur eum amet nulla eligendi possimus.",
