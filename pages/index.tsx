@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Head from "next/head";
 import { chapters } from "../lib/data";
+import * as React from "react";
 
 export default function Home() {
   return (
