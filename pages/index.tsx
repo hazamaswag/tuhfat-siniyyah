@@ -1,66 +1,35 @@
+import Link from "next/link";
 import Head from "next/head";
-import styles from "../styles/Home.module.css";
-import * as React from "react";
+import { chapters } from "../lib/data";
 
 export default function Home() {
   return (
-    <div className={styles.container}>
+    <div>
       <Head>
-        <title>Create Next App</title>
+        <title>Tuhfat</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <header className="my-4">
+        <h1 className="text-6xl font-bold text-center">Tuhfat</h1>
+      </header>
 
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-
-        <p className={styles.description}>
-          Get started by editing{" "}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
-        </div>
-      </main>
-
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{" "}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-        </a>
-      </footer>
+      <div className="space-y-4">
+        {/* <h1>hello</h1> */}
+        {chapters.map((post) => (
+          <BlogListItem key={post.slug} {...post} />
+        ))}
+      </div>
     </div>
   );
 }
+
+const BlogListItem = ({ slug, title, date, content }) => {
+  return (
+    <div className="border border-black-400 shadow hover:shadow-md rounded-md transition duration-200 ease-in">
+      <Link href={`/chapter/${slug}`} as={`/chapter/${slug}`}>
+        <a className="font-bold block p-4">{title}</a>
+      </Link>
+    </div>
+    // {/* // maybe at the mtn as well? */}
+  );
+};
