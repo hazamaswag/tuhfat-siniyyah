@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://github.com/hazamaswag/tuhfat-siniyyah"><img alt="GitHub license" src="https://img.shields.io/github/license/hazamaswag/tuhfat-siniyyah?style=for-the-badge"></a>
+  <a href="https://github.com/hazamaswag/tuhfat-siniyyah/blob/main/LICENSE"><img alt="GitHub license" src="https://img.shields.io/github/license/hazamaswag/tuhfat-siniyyah?style=for-the-badge"></a>
 </p>
 
 
