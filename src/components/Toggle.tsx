@@ -1,6 +1,5 @@
 import React from "react";
 import { useState } from "react";
-import { IChapters } from "../../IChapters";
 import { IContent } from "../../IChapters";
 
 const Toggle = ({ content }: IContent) => {
