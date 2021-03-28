@@ -3,16 +3,32 @@ export interface IChapters {
   slug?: string;
   content: {
     matn: {
-      arabic: string;
-      voweled: string;
-      english: string;
+      arabic: [string];
+      voweled: [string];
+      english: [string];
     };
     commentary: {
       arabic: [string];
       voweled: [string];
       english: [string];
     };
-    questions: string;
-    exercises: string;
+    questions: {
+      arabic: [string];
+      voweled: [string];
+      english: [string];
+    };
+    exercises: {
+      arabic: [string];
+      voweled: [string];
+      english: [string];
+    };
+  };
+}
+
+export interface IContent {
+  content: {
+    arabic: [string];
+    voweled: [string];
+    english: [string];
   };
 }

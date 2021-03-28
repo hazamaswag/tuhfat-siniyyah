@@ -4,17 +4,25 @@ export const chapters = [
     slug: "1",
     content: {
       matn: {
-        arabic: "نصر",
-        voweled: "نَصَرَ",
-        english: "actual ajrumiyyah",
+        arabic: ["نصر"],
+        voweled: ["نَصَرَ"],
+        english: ["actual ajrumiyyah"],
       },
       commentary: {
+        arabic: ["ضرب"],
+        voweled: ["ضَرَبَ"],
+        english: ["commentary from author"],
+      },
+      questions: {
         arabic: ["نصر"],
         voweled: ["نَصَرَ"],
         english: ["commentary from author"],
       },
-      questions: "",
-      exercises: "",
+      exercises: {
+        arabic: ["نصر"],
+        voweled: ["نَصَرَ"],
+        english: ["commentary from author"],
+      },
     },
   },
   {

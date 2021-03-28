@@ -3,7 +3,7 @@ import { chapters } from "../../lib/data";
 import Toggle from "../../src/components/Toggle";
 import { IChapters } from "../../IChapters";
 
-export default function BlogPage({ title, content }: IChapters) {
+export default function ChapterPage({ title, content }: IChapters) {
   return (
     <div>
       <Head>
@@ -14,7 +14,10 @@ export default function BlogPage({ title, content }: IChapters) {
         <h1 className="text-6xl font-bold text-center underline">{title}</h1>
       </header>
       <main>
-        <Toggle content={content} />
+        <Toggle content={content.matn} />
+        <Toggle content={content.commentary} />
+        <Toggle content={content.exercises} />
+        <Toggle content={content.questions} />
       </main>
     </div>
   );
