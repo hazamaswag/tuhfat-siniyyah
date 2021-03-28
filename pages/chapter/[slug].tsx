@@ -1,8 +1,9 @@
 import Head from "next/head";
 import { chapters } from "../../lib/data";
 import Toggle from "../../src/components/Toggle";
+import { IChapters } from "../../IChapters";
 
-export default function BlogPage({ title, date, content, rev_content }) {
+export default function BlogPage({ title, content }: IChapters) {
   return (
     <div>
       <Head>
@@ -13,14 +14,13 @@ export default function BlogPage({ title, date, content, rev_content }) {
         <h1 className="text-6xl font-bold text-center underline">{title}</h1>
       </header>
       <main>
-        <Toggle title={title} content={content} rev_content={rev_content} />
+        <Toggle content={content} />
       </main>
     </div>
   );
 }
 
 export async function getStaticProps(context) {
-  // console.log(context);
   const { params } = context;
   return {
     props: chapters.find((item) => item.slug == params.slug),

@@ -24,7 +24,7 @@ export default function Home() {
   );
 }
 
-const BlogListItem = ({ slug, title, date, content }) => {
+const BlogListItem = ({ slug, title, content }) => {
   return (
     <div className="border border-black-400 shadow hover:shadow-md rounded-md transition duration-200 ease-in">
       <Link href={`/chapter/${slug}`} as={`/chapter/${slug}`}>

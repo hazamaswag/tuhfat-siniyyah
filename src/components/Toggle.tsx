@@ -1,16 +1,18 @@
 import React from "react";
 import { useState } from "react";
+import { IChapters } from "../../IChapters";
 
-const Toggle = ({ title, content, rev_content }) => {
-  const [text, setText] = useState(content);
+const Toggle = ({ content }: IChapters) => {
+  const [text, setText] = useState(content.matn.arabic);
   return (
     <>
-      <h1>{title}</h1>
       <p>{text}</p>
       <button
         type="button"
         onClick={() =>
-          text === content ? setText(rev_content) : setText(content)
+          text === content.matn.arabic
+            ? setText(content.matn.voweled)
+            : setText(content.matn.arabic)
         }
       >
         toggle me
