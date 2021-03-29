@@ -8,9 +8,9 @@ const Toggle = ({ content }: IContent) => {
   return (
     <>
       <div className="flex">
-        <p className="flex-1 text-right mx-2">{text}</p>
+        <p className="flex-1 text-right mx-2 my-2 text-2xl">{text}</p>
         <button
-          className="border-2 p-1"
+          className="border-2 p-1 rounded-lg my-2"
           type="button"
           onClick={() =>
             text === content.arabic
@@ -21,6 +21,7 @@ const Toggle = ({ content }: IContent) => {
           toggle me
         </button>
       </div>
+      <p className="text-left ">{content.english}</p>
     </>
   );
 };

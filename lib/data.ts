@@ -1,12 +1,12 @@
 export const chapters = [
   {
-    title: "1. and the name of this first is ",
+    title: "١. تعريف الكلام، وأمثلة له، و أسعلة ",
     slug: "1",
     content: {
       matn: {
-        arabic: ["نصر"],
+        arabic: [".الكَلَمُ هُوَ اللَّفْظُ الْمُرَكَّبُ المُفِيدُ بِالْوَضْعِ"],
         voweled: ["نَصَرَ"],
-        english: ["actual ajrumiyyah"],
+        english: ["Words are beneficial and compounded sounds by convention."],
       },
       commentary: {
         arabic: ["ضرب"],

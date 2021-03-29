@@ -11,7 +11,9 @@ export default function ChapterPage({ title, content }: IChapters) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <header className="my-4">
-        <h1 className="text-6xl font-bold text-center underline">{title}</h1>
+        <h1 className="text-6xl font-bold text-center leading-loose underline">
+          {title}
+        </h1>
       </header>
       <main>
         <Toggle content={content.matn} />

@@ -20,7 +20,7 @@ function MyApp({ Component, pageProps }) {
           </ul>
         </nav>
       </header>
-      <main className="mx-auto w-9/12">
+      <main className="mx-auto w-7/12">
         <Component {...pageProps} />
       </main>
 
