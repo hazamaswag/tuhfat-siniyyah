@@ -16,9 +16,15 @@ export default function ChapterPage({ title, content }: IChapters) {
         </h1>
       </header>
       <main>
+        {/* <div className="text-center"> */}
+        <h1 className="text-center">MATN</h1>
         <Toggle content={content.matn} />
+        {/* </div> */}
+        <h1 className="text-center">Commentary</h1>
         <Toggle content={content.commentary} />
+        <h1 className="text-center">Exercises</h1>
         <Toggle content={content.exercises} />
+        <h1 className="text-center">Questions</h1>
         <Toggle content={content.questions} />
       </main>
     </div>

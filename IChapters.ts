@@ -3,22 +3,22 @@ export interface IChapters {
   slug?: string;
   content: {
     matn: {
-      arabic: [string];
+      unvoweled: [string];
       voweled: [string];
       english: [string];
     };
     commentary: {
-      arabic: [string];
+      unvoweled: [string];
       voweled: [string];
       english: [string];
     };
     questions: {
-      arabic: [string];
+      unvoweled: [string];
       voweled: [string];
       english: [string];
     };
     exercises: {
-      arabic: [string];
+      unvoweled: [string];
       voweled: [string];
       english: [string];
     };
@@ -27,7 +27,7 @@ export interface IChapters {
 
 export interface IContent {
   content: {
-    arabic: [string];
+    unvoweled: [string];
     voweled: [string];
     english: [string];
   };

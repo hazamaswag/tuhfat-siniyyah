@@ -4,22 +4,26 @@ export const chapters = [
     slug: "1",
     content: {
       matn: {
-        arabic: [".الكَلَمُ هُوَ اللَّفْظُ الْمُرَكَّبُ المُفِيدُ بِالْوَضْعِ"],
-        voweled: ["نَصَرَ"],
+        unvoweled: [
+          ".الكَلَامُ هُوَ اللَّفْظُ الْمُرَكَّبُ الْمُفِيدُ بِالْوَضْعِ",
+        ],
+        voweled: [
+          ".الكَلَامُ هُوَ اللَّفْظُ الْمُرَكَّبُ الْمُفِيدُ بِالْوَضْعِ",
+        ],
         english: ["Words are beneficial and compounded sounds by convention."],
       },
       commentary: {
-        arabic: ["ضرب"],
+        unvoweled: ["ضرب"],
         voweled: ["ضَرَبَ"],
         english: ["commentary from author"],
       },
       questions: {
-        arabic: ["نصر"],
+        unvoweled: ["نصر"],
         voweled: ["نَصَرَ"],
         english: ["commentary from author"],
       },
       exercises: {
-        arabic: ["نصر"],
+        unvoweled: ["نصر"],
         voweled: ["نَصَرَ"],
         english: ["commentary from author"],
       },
@@ -30,12 +34,12 @@ export const chapters = [
     slug: "2",
     content: {
       matn: {
-        arabic: "نصر",
+        unvoweled: "نصر",
         voweled: "نَصَرَ",
         english: "actual ajrumiyyah",
       },
       commentary: {
-        arabic: ["نصر"],
+        unvoweled: ["نصر"],
         voweled: ["نَصَرَ"],
         english: ["commentary from author"],
       },
