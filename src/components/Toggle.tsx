@@ -1,10 +1,13 @@
+import { spawn } from "node:child_process";
 import React from "react";
 import { useState } from "react";
 import { IContent } from "../../IChapters";
+import { ParseColor } from "./ParseColor";
 
 const Toggle = ({ content }: IContent) => {
   const [text, setText] = useState(content.unvoweled);
-  const [vowel, setVowel] = useState("هِ هَ هُ");
+  // const [vowel, setVowel] = useState("هِ هَ هُ");
+  const [vowel, setVowel] = useState(false);
   if (!text) return null;
 
   return (
@@ -17,14 +20,17 @@ const Toggle = ({ content }: IContent) => {
           onClick={() => {
             if (text === content.unvoweled) {
               setText(content.voweled);
-              setVowel("ه ه ه");
+              // setVowel("ه ه ه");
+              setVowel(true);
             } else {
               setText(content.unvoweled);
-              setVowel("هِ هَ هُ");
+              // setVowel("هِ هَ هُ");
+              setVowel(false);
             }
           }}
         >
-          {vowel}
+          <ParseColor vowel={vowel} />
+          {/* {console.log(vowel)} */}
         </button>
       </div>
       <p className="text-left ">{content.english}</p>
