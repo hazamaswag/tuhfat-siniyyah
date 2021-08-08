@@ -25,7 +25,7 @@ export const ParseColor = ({ vowel }) => {
           </span>
           ه
           <span lang={"ara"} style={{ color: "blue" }}>
-            ُ &nbsp;
+            ُ
           </span>
         </p>
       )}
