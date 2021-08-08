@@ -15,7 +15,12 @@ const Toggle = ({ content }: IContent) => {
       <div className="flex">
         <p className="flex-1 text-right mx-2 my-2 text-2xl">{text}</p>
         <button
-          className="border-2 p-1 rounded-lg m-2"
+          className={`border-2 p-2 rounded-lg focus:outline-none
+            ${
+              !vowel
+                ? "hover:bg-gray-100"
+                : "bg-red-500 bg-opacity-50 hover:bg-opacity-40"
+            }`}
           type="button"
           onClick={() => {
             if (text === content.unvoweled) {
