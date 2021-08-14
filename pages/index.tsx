@@ -10,6 +10,10 @@ export default function Home() {
     <div>
       <Head>
         <title>Tuhfat</title>
+        <meta
+          http-equiv="Content-Type"
+          content="text/html;charset=UTF-8"
+        ></meta>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <header className="my-4">

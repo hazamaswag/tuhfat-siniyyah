@@ -13,7 +13,10 @@ const Toggle = ({ content }: IContent) => {
   return (
     <>
       <div className="flex">
-        <p className="flex-1 text-right mx-2 my-2 text-2xl">{text}</p>
+        <div className="flex-1 text-right mx-2 my-2 text-2xl">
+          {/* {text} */}
+          <ParseColor vowel={vowel} text={text} />
+        </div>
         <button
           className={`border-2 p-2 rounded-lg focus:outline-none
             ${
@@ -25,6 +28,7 @@ const Toggle = ({ content }: IContent) => {
           onClick={() => {
             if (text === content.unvoweled) {
               setText(content.voweled);
+
               // setVowel("ه ه ه");
               setVowel(true);
             } else {
@@ -34,7 +38,7 @@ const Toggle = ({ content }: IContent) => {
             }
           }}
         >
-          <ParseColor vowel={vowel} />
+          <ParseColor vowel={vowel} text={"ه  ه  ه"} />
           {/* {console.log(vowel)} */}
         </button>
       </div>
