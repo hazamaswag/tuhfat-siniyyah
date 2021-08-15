@@ -1,28 +1,59 @@
+import { workerData } from "node:worker_threads";
 import React from "react";
 
-export const ParseColor = ({ vowel, text }) => {
+interface IColor {
+  vowel: boolean;
+  text: string;
+}
+
+export const ParseColor = ({ vowel, text }: IColor) => {
   let res = [];
-  for (let word of text) {
-    for (let char of word) {
-      if (char === "َ" || char === "ُ" || char === "ِ") {
+  let tokens = text.split(/[ ,]+/);
+  for (let token of tokens) {
+    for (let i = 0; i < token.length; i++) {
+      // console.log(tokens[i]);
+      if (i === token.length - 1) {
         res.push(
           <span lang={"ar"} className="text-blue-600">
-            {char}
+            {token[i]}&nbsp;
           </span>
         );
       } else {
-        res.push(char);
+        res.push(<span>{token[i]}</span>);
       }
     }
+    // for (let i = 0; i < word.length; i++) {
+    //   if (i === word.length - 1) {
+    //     res.push(
+    //       <span lang={"ar"} className="text-blue-600">
+    //         &zwj;{word[i]}
+    //       </span>
+    //     );
+    //   } else {
+    //     res.push(<span>{word[i]}</span>);
+    //   }
+    // }
+    // if (char === "َ" || char === "ُ" || char === "ِ") {
+    //   res.push(
+    //     <span lang={"ar"} className="text-blue-600">
+    //       &zwj;{char}
+    //     </span>
+    //   );
+    // } else {
+    //   res.push(<span>{char}</span>);
+    // }
   }
 
   return (
     <div dir={"rtl"}>
       {
-        vowel
-          ? // <span>ه ه ه</span>
-            res
-          : text
+        vowel ? (
+          // <span>ه ه ه</span>
+          <span>{res} </span>
+        ) : (
+          // res
+          text
+        )
         // <p>
         //   ه
         //   <span lang={"ara"} style={{ color: "rgb(37, 99, 235)" }}>
